@@ -12,11 +12,6 @@
 		6CD990311B7789680011A685 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD9902D1B7789680011A685 /* GCDAsyncSocket.m */; };
 		6CD990321B7789680011A685 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD9902E1B7789680011A685 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CD990331B7789680011A685 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD9902F1B7789680011A685 /* GCDAsyncUdpSocket.m */; };
-		7D8B70D01BCFA22A00D8E273 /* CocoaAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C55C7D11B7838B1006A7440 /* CocoaAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8B70D11BCFA23100D8E273 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD9902C1B7789680011A685 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8B70D21BCFA23100D8E273 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD9902D1B7789680011A685 /* GCDAsyncSocket.m */; };
-		7D8B70D31BCFA23100D8E273 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD9902E1B7789680011A685 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D8B70D41BCFA23100D8E273 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD9902F1B7789680011A685 /* GCDAsyncUdpSocket.m */; };
 		9FC41F2C1B9D968000578BEB /* CocoaAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C55C7D11B7838B1006A7440 /* CocoaAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FC41F2D1B9D968700578BEB /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CD9902C1B7789680011A685 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FC41F2E1B9D968E00578BEB /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD9902D1B7789680011A685 /* GCDAsyncSocket.m */; };
@@ -32,19 +27,11 @@
 		6CD9902D1B7789680011A685 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = SOURCE_ROOT; };
 		6CD9902E1B7789680011A685 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = SOURCE_ROOT; };
 		6CD9902F1B7789680011A685 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = SOURCE_ROOT; };
-		7D8B70C41BCFA15700D8E273 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC41F131B9D965000578BEB /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6CD9900C1B77868C0011A685 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D8B70C01BCFA15700D8E273 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,7 +61,6 @@
 			children = (
 				6CD990101B77868C0011A685 /* CocoaAsyncSocket.framework */,
 				9FC41F131B9D965000578BEB /* CocoaAsyncSocket.framework */,
-				7D8B70C41BCFA15700D8E273 /* CocoaAsyncSocket.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,16 +100,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D8B70C11BCFA15700D8E273 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D8B70D31BCFA23100D8E273 /* GCDAsyncUdpSocket.h in Headers */,
-				7D8B70D01BCFA22A00D8E273 /* CocoaAsyncSocket.h in Headers */,
-				7D8B70D11BCFA23100D8E273 /* GCDAsyncSocket.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9FC41F101B9D965000578BEB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,24 +129,6 @@
 			name = "iOS CocoaAsyncSocket";
 			productName = CocoaAsyncSocket;
 			productReference = 6CD990101B77868C0011A685 /* CocoaAsyncSocket.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7D8B70C31BCFA15700D8E273 /* tvOS CocoaAsyncSocket */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D8B70CB1BCFA15700D8E273 /* Build configuration list for PBXNativeTarget "tvOS CocoaAsyncSocket" */;
-			buildPhases = (
-				7D8B70BF1BCFA15700D8E273 /* Sources */,
-				7D8B70C01BCFA15700D8E273 /* Frameworks */,
-				7D8B70C11BCFA15700D8E273 /* Headers */,
-				7D8B70C21BCFA15700D8E273 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "tvOS CocoaAsyncSocket";
-			productName = "tvOS CocoaAsyncSocket";
-			productReference = 7D8B70C41BCFA15700D8E273 /* CocoaAsyncSocket.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9FC41F121B9D965000578BEB /* Mac CocoaAsyncSocket */ = {
@@ -204,10 +162,6 @@
 						CreatedOnToolsVersion = 7.0;
 						ProvisioningStyle = Automatic;
 					};
-					7D8B70C31BCFA15700D8E273 = {
-						CreatedOnToolsVersion = 7.1;
-						ProvisioningStyle = Automatic;
-					};
 					9FC41F121B9D965000578BEB = {
 						CreatedOnToolsVersion = 6.4;
 						ProvisioningStyle = Automatic;
@@ -229,20 +183,12 @@
 			targets = (
 				6CD9900F1B77868C0011A685 /* iOS CocoaAsyncSocket */,
 				9FC41F121B9D965000578BEB /* Mac CocoaAsyncSocket */,
-				7D8B70C31BCFA15700D8E273 /* tvOS CocoaAsyncSocket */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6CD9900E1B77868C0011A685 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D8B70C21BCFA15700D8E273 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,15 +211,6 @@
 			files = (
 				6CD990331B7789680011A685 /* GCDAsyncUdpSocket.m in Sources */,
 				6CD990311B7789680011A685 /* GCDAsyncSocket.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D8B70BF1BCFA15700D8E273 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D8B70D41BCFA23100D8E273 /* GCDAsyncUdpSocket.m in Sources */,
-				7D8B70D21BCFA23100D8E273 /* GCDAsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,56 +410,6 @@
 			};
 			name = Release;
 		};
-		7D8B70C91BCFA15700D8E273 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.robbiehanson.CocoaAsyncSocket;
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Debug;
-		};
-		7D8B70CA1BCFA15700D8E273 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.robbiehanson.CocoaAsyncSocket;
-				PRODUCT_NAME = "$(PROJECT_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Release;
-		};
 		9FC41F271B9D965000578BEB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -545,7 +432,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robbiehanson.CocoaAsyncSocket;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
@@ -571,7 +458,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.robbiehanson.CocoaAsyncSocket;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = macosx;
@@ -596,15 +483,6 @@
 			buildConfigurations = (
 				6CD990251B77868C0011A685 /* Debug */,
 				6CD990261B77868C0011A685 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D8B70CB1BCFA15700D8E273 /* Build configuration list for PBXNativeTarget "tvOS CocoaAsyncSocket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D8B70C91BCFA15700D8E273 /* Debug */,
-				7D8B70CA1BCFA15700D8E273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
